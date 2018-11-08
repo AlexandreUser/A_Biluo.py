@@ -12,3 +12,8 @@ L - Last part of the entity;
 U - Unitary entity;
 O - Not a entity;
 V0.1.0
+git clone https://github.com/AlexandreUser/A_Biluo.py
+
+
+import biluo
+
