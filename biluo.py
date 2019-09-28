@@ -17,7 +17,13 @@ def full_names(x,y):
 
 def startBiluo(dicts):
     import json
+    from_txt = open("nomes_minusculo.txt").read()
+    from_txt = from_txt[1:-2]
+    from_txt = from_txt.replace("'","")
+    from_txt = from_txt.split(",")
     nomes = json.loads(open('cap_names.json').read())
+    nomes["cap_names"] = nomes["cap_names"] + from_txt;
+    print(nomes)
     #savename = nomes
     exceptions = json.loads(open('exception.json').read())
     tupla = []
